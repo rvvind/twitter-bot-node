@@ -16,7 +16,7 @@ function searchAndTweet(succeed, fail) {
         client.post('statuses/retweet/' + tweetId, function(err, tweet, id) {
         // Will return an error if we try to retweet a tweet that we've already
                 // retweeted.
-                console.log(err || tweet.text);
+                console.log(warn || tweet.text);
         });
       });
       succeed("success");
