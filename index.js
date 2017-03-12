@@ -2,7 +2,7 @@ var Twitter = require('twitter');
 var credentials = require('./credentials');
 var client = new Twitter(credentials);
 
-var query = ["from:awscloud min_faves:50", "from:JeffBezos min_faves:500"];
+var query = ["from:awscloud min_faves:50", "from:JeffBezos min_faves:500", "from:ajassy min_faves:100", "from:AWSreInvent min_faves:15"];
 
 function searchAndTweet(succeed, fail) {
   for (i=0; i < query.length; i++) {
